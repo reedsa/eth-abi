@@ -6,9 +6,13 @@ from typing import (
     Generator,
 )
 
-from eth_utils import (
-    big_endian_to_int,
+from eth_utils.address import (
     to_normalized_address,
+)
+from eth_utils.encoding import (
+    big_endian_to_int,
+)
+from eth_utils.functional import (
     to_tuple,
 )
 

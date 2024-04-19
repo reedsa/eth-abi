@@ -10,16 +10,20 @@ from typing import (
     Type,
 )
 
-from eth_utils import (
-    int_to_big_endian,
+from eth_utils.address import (
     is_address,
-    is_boolean,
     is_bytes,
+    is_text,
+    to_canonical_address,
+)
+from eth_utils.encoding import (
+    int_to_big_endian,
+)
+from eth_utils.types import (
+    is_boolean,
     is_integer,
     is_list_like,
     is_number,
-    is_text,
-    to_canonical_address,
 )
 
 from eth_abi.base import (

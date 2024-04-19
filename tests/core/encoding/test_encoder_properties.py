@@ -2,18 +2,24 @@ import codecs
 import decimal
 import pytest
 
-from eth_utils import (
-    decode_hex,
-    int_to_big_endian,
+from eth_utils.address import (
     is_address,
-    is_boolean,
     is_bytes,
-    is_integer,
-    is_number,
     is_text,
     to_canonical_address,
     to_checksum_address,
     to_normalized_address,
+)
+from eth_utils.encoding import (
+    int_to_big_endian,
+)
+from eth_utils.hexadecimal import (
+    decode_hex,
+)
+from eth_utils.types import (
+    is_boolean,
+    is_integer,
+    is_number,
 )
 from hypothesis import (
     example,

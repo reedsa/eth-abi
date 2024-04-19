@@ -1,11 +1,15 @@
 import pytest
 import sys
 
-from eth_utils import (
-    big_endian_to_int,
-    decode_hex,
-    int_to_big_endian,
+from eth_utils.address import (
     to_normalized_address,
+)
+from eth_utils.encoding import (
+    big_endian_to_int,
+    int_to_big_endian,
+)
+from eth_utils.hexadecimal import (
+    decode_hex,
 )
 from eth_utils.toolz import (
     complement,

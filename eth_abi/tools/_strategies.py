@@ -7,7 +7,7 @@ from typing import (
 from eth_typing.abi import (
     TypeStr,
 )
-from eth_utils import (
+from eth_utils.address import (
     to_checksum_address,
 )
 from hypothesis import (
